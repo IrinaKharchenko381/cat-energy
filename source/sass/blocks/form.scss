@@ -1,0 +1,198 @@
+.form {
+  overflow: hidden;
+  margin-top: 39px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 36px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 26px;
+  }
+}
+
+.form__container {
+  @media (min-width: $breakpoint-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.form__group {
+  margin: 0;
+
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $breakpoint-medium) {
+      margin-top: 63px;
+      margin-left: 43px;
+      margin-right: 37px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 53px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      &.form__group--target {
+        margin-top: 5px;
+        margin-left: 2px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.form__group--contacts,
+.form__group--comment,
+.form__group--additional {
+  @media (min-width: $breakpoint-large) {
+    grid-column: 1 / -1;
+  }
+}
+
+.form__group--contacts {
+  padding-top: 12px;
+  margin-bottom: -3px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 16px;
+  }
+}
+
+.form__group + .form__group--contacts {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 63px;
+    margin-left: 39px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 45px;
+    margin-left: 0;
+  }
+}
+
+.form__group--contacts .field {
+  @media (min-width: $breakpoint-medium) {
+    gap: 23px;
+    margin-right: 0;
+  }
+}
+
+.field.field--contacts {
+  @media (min-width: $breakpoint-medium) {
+    gap: 16px;
+  }
+}
+
+.form__group + .form__group--comment {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 56px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 58px;
+    margin-left: 0;
+  }
+}
+
+.form__group--additional {
+  padding-top: 8px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 2px;
+  }
+}
+
+.form__group--target {
+  padding-top: 29px;
+  margin-right: -21px;
+  margin-left: -21px;
+
+  border: 1px solid $color-gray-200;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form__footer {
+  margin-top: 15px;
+  padding-bottom: 28px;
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 35px;
+    padding-bottom: 72px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 62px;
+    text-align: left;
+    margin-left: 41px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    grid-column: 1 / -1;
+    margin-top: 41px;
+    margin-left: 1px;
+    gap: 82px;
+    padding-bottom: 82px;
+  }
+}
+
+.form__button {
+  width: 100%;
+  font-size: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  @media (max-width: $breakpoint-small-down) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 20px;
+    padding-bottom: 16px;
+    min-width: 282px;
+    padding-top: 16px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: 568px;
+  }
+}
+
+.form__additional {
+  margin: 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: -4px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: -1px;
+  }
+}
+
+.form__group--cat {
+  margin-bottom: -5px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: -4px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: 0;
+    margin-top: 3px;
+  }
+}

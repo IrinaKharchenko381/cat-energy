@@ -1,0 +1,10 @@
+node_modules/
+.idea/
+*.log
+*.lock
+.DS_Store
+.publish
+Thumbs.db
+build/
+source/css/*.css
+source/css/*.map

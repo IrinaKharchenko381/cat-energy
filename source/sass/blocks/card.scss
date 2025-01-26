@@ -1,0 +1,218 @@
+.card {
+  padding-top: 7px;
+  padding-bottom: 27px;
+  display: grid;
+
+  @media (max-width: $breakpoint-small-down) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img    link"
+      "img    list"
+      "button button";
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 8px 38px 40px;
+    grid-template-rows: 200px auto;
+    grid-template-areas:
+      "img"
+      "link"
+      "list"
+      "button";
+
+    background-color: $color-gray-50;
+    background-image: linear-gradient(to bottom, $color-white 80px, $color-gray-50 80px);
+  }
+}
+
+.card__link {
+  padding-top: 11px;
+  margin-bottom: 4px;
+  padding-right: 60px;
+  grid-area: link;
+
+  color: $color-gray-850;
+
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-medium) {
+    padding: 0 53px;
+    padding-top: 33px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 33px 17px 5px 22px;
+  }
+}
+
+.card__heading {
+  margin: 0;
+
+  font-family: $font-heading;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    line-height: 21px;
+  }
+}
+
+.card__picture,
+.card__img {
+  margin-top: 7px;
+  grid-area: img;
+  place-self: center center;
+  width: auto;
+}
+
+.card:nth-child(2) .card__picture {
+  margin-top: -3px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 12px;
+  }
+}
+
+.card:nth-child(3) .card__picture {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 4px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: -18px;
+  }
+}
+
+.card:nth-child(4) .card__picture {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 8px;
+  }
+}
+
+.card:nth-child(5) .card__picture {
+  margin-top: 6px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: -3px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: -19px;
+  }
+}
+
+.card:nth-child(6) .card__picture {
+  margin-top: 21px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 26px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 9px;
+  }
+}
+
+.card:nth-child(7) .card__picture {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: -3px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: -20px;
+  }
+}
+
+.card:nth-child(8) .card__picture {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 6px;
+  }
+}
+
+.card__picture--little {
+  margin-top: 15px;
+}
+
+.card__list {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 9px 0;
+  grid-area: list;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  color: $color-gray-700;
+
+  font-size: 12px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+
+    row-gap: 6px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: 3px;
+    margin-bottom: 25px;
+  }
+}
+
+.card__title {
+  margin: 0;
+  padding-right: 4px;
+  line-height: 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 2px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $color-gray-250;
+  }
+}
+
+.card__definition {
+  margin: 0;
+  padding-left: 4px;
+
+  text-align: right;
+  line-height: 16px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 2px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $color-gray-250;
+  }
+}
+
+.card__button {
+  grid-area: button;
+  margin-top: 1px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 0;
+    margin-left: 1px;
+    margin-right: -1px;
+  }
+}

@@ -1,0 +1,145 @@
+.contacts {
+  &:not(.contacts--main) {
+    background-color: $color-gray-50;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    position: relative;
+    z-index: 0;
+
+    min-height: 400px;
+    padding: 40px 0 52px;
+    display: grid;
+    grid-template-columns: 1220px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+  }
+}
+
+.contacts__container {
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 28px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 708px;
+    padding: 61px 41px;
+    grid-template-columns: 172px 172px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    position: relative;
+    z-index: 1;
+
+    width: 565px;
+    margin: 0;
+    padding: 60px 80px;
+
+    background-color: $color-white;
+  }
+}
+
+.contacts__heading {
+  margin: 0;
+  padding-right: 10px;
+
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-right: 0;
+
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__address {
+  margin: 0;
+
+  color: $color-gray-700;
+
+  line-height: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: right;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    text-align: left;
+    padding-bottom: 2px;
+    padding-left: 16px;
+    margin-top: -4px;
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+
+  border: none;
+
+  @media (min-width: $breakpoint-medium) {
+    height: 400px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.icon-vkontakte {
+  @media (min-width: $breakpoint-medium) {
+    width: 29px;
+    height: 17px;
+  }
+}
+
+.contacts__container--form {
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 59px;
+  }
+}
+
+.contacts__heading--form {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 2px;
+  }
+}
+
+.contacts__container--catalog {
+  @media (min-width: $breakpoint-medium) {
+    padding: 57px 41px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 60px 80px;
+  }
+}
+
+.contacts__heading--catalog {
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 3px;
+  }
+}
+
+.contacts__address--catalog {
+  @media (min-width: $breakpoint-large) {
+    margin-top: 0;
+  }
+}
